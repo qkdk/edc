@@ -1,0 +1,68 @@
+HTTP/1.1 200 OK
+Date: Tue, 23 Nov 2021 14:43:12 GMT
+Server: Apache
+Set-Cookie: TestCookie=test123
+Set-Cookie: TestExpiresCookie=expiresinanhour; expires=Tue, 23-Nov-2021 15:43:12 GMT; Max-Age=3600
+Set-Cookie: TestPathCookie=%2Fbooks; expires=Tue, 23-Nov-2021 15:43:12 GMT; Max-Age=3600; path=/books
+Set-Cookie: TestDomainCookie=domaintest; domain=.cafeaulait.org
+Vary: Accept-Encoding
+Content-Style-Type: text/css
+Content-Length: 957
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Query Results</title>
+</head>
+<body>
+
+<h1>Query Results</h1>
+
+<p>You submitted the following name/value pairs:</p>
+
+<ul>
+</ul>
+
+<p>
+The request included the following cookies:
+</p>
+
+<ul>
+<li>cookie1 = 111</li>
+<li>cookie2 = 222</li>
+<li>cookie3 = 333</li>
+</ul>
+
+<p>
+Here's the HTTP request header:
+</p>
+
+<pre>  
+COOKIE: cookie1=111; cookie2=222; cookie3=333
+HOST: www.cafeaulait.org
+ACCEPT: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+CONNECTION: close
+X_FORWARDED_PROTO: http
+X_FORWARDED_FOR: 121.183.255.250
+</pre>
+
+<p>
+Here's the complete body of the request:
+</p>
+
+<pre>&3=2&network=programming</pre>
+
+<hr />
+<p>Some links:</p>
+
+<a href="postquery.phtml">This Page</a>
+<a href="postquery2.phtml">Another Page</a>
+
+<hr />
+Last Modified July 25, 2004
+
+</body>
+</html>
